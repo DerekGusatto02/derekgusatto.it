@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 :root{
     --bgColor: #10202a;
     --mainColor: #FF9933;
-    --secondaryColor: #66FFCC;
+    --secondaryColor: #ABFBDB;
     --txtColor: #AEA4BF;
-    --font-body-family: "Futura", sans-serif;
+    --font-body-family: "Exo", sans-serif;
 }
 
 html{
@@ -56,10 +57,6 @@ a:visited{
 }
 
 
-#togglemenu{
-    display: none;
-}
-
 #menu ul{
     margin: auto;
     padding: 1em;
@@ -68,11 +65,10 @@ a:visited{
 }
 
 #menu ul li{
+    text-align: center;
     display: inline-block;
-    width: 12.5%;
+    width: 20%;
     margin: 0 0.5em; 
-    font-weight: bold;
-    text-transform: uppercase; 
 }
 
 #menu ul li a{
@@ -83,6 +79,7 @@ a:visited{
     margin: auto;
     text-align: left;
     padding:0.5em;
+    color: var(--secondaryColor);
 }
 
 main{
@@ -123,6 +120,10 @@ main{
     background-image: url("../img/logo.svg");
     font-size: 2em;
 }
+#togglemenu{
+    display: none;
+}
+
 /* footer */
 footer{
     background-color: var(--bgColor);
@@ -193,4 +194,35 @@ grid-area: i;
 
 #social-list li a{
     display: block;
+}
+
+main > h1, main >h2{
+    margin: 0.5em auto; 
+}
+
+main > h1{
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 0.3em; 
+    grid-template-areas: 
+        "h h h" 
+        "i c c" ;
+}
+
+.about-me > h2{
+    grid-area: h;
+}
+.about-me > p{
+    grid-area: c;
+}
+.about-me > img{
+    grid-area: i;
+    width: 25%;
 }

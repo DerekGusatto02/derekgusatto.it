@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgColor: #10202a;
+    --mainColor: #FF9933;
+    --secondaryColor: #ABFBDB;
+    --txtColor: #AEA4BF;
+    --font-body-family: "Exo", sans-serif;
+}
+
+html{
+    font-size: 100%;
+    font-family: var(--font-body-family);
+    line-height: 1.5em;
+    margin: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bgColor);
+}
+
+header h1{
+    width: 20%;
+    font-size: 2em;
+    display: inline-block;
+    margin:0.25em 0em 0.25em 0.1em;
+}
+
+header #breadcrumb{
+    padding: 0.5em 0.5em 0em 0.5em;
+    margin: auto;
+    font-size: 0.9em;
+    background-color: var(--bgColor);
+    text-align: center;
+    line-height: 1.5em;
+}
+
+
+/*icona menu hamburger*/
+#togglemenu{
+    display: block;
+    cursor: pointer;
+    background-color: var(--bgColor);
+    border:0;
+    background-image: url("../img/hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:2.5em;
+    width:2.5em;
+    float: right;
+    margin:1.5em 1em 0em 0em;
+    text-indent: -999em;
+}
+
+.tmenuhidden{
+    display: none;
+}
+
+.tmenushow{
+    display: block;
+}
+
+#menu{
+    width:100%;
+    background-color: var(--bgColor);
+    border-top:1px solid var(--txtColor);
+    margin: 0.5em 0;
+    
+}
+
+#menu ul{
+    padding: 0;
+}
+
+#menu ul li{
+    width:100%;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    line-height: 3em;
+    background-color: var(--bgColor);
+    margin:0;
+    border-bottom:1px solid var(--txtColor);
+}
+
+#home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 0.3em; 
+    grid-template-areas: " c c ";
+
+}
+
+#home-container > #splash-image{
+    display: none;
+}
+
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-gap: 0.3em; 
+    grid-template-areas: 
+        "h"
+        "c"
+        "c"
+        "i";    
+    align-items: center;         
+}
+
+.about-me > img{
+    width: 90%;
+}
