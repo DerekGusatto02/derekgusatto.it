@@ -2,8 +2,9 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recupero dei dati dal form
     $name = strip_tags(trim($_POST["name"]));
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $email = filter_var(trim($_POST["mail"]), FILTER_SANITIZE_EMAIL);
     $message = strip_tags(trim($_POST["message"]));
+    
 
     // Controllo dei dati
     if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -13,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Impostazioni dell'email
-    $to = "gusattoderek@gmail.com.com"; // Sostituisci con il tuo indirizzo email
+    $to = "gusattoderek@gmail.com"; // Sostituisci con il tuo indirizzo email
     $to_we = "postmaster@derekgusatto.it"; // Sostituisci con il tuo indirizzo email
     $subject = "Nuovo messaggio dal tuo sito web";
     $email_content = "Nome: $name\n";
@@ -24,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: $name <$email>";
 
     // Invio dell'email
-    if (mail($to, $subject, $email_content, $headers)) {
+    if (mail($to, $subject, $email_content, $headers) && mail($to_we, $subject, $email_content, $headers)) {
         echo "Grazie! Il tuo messaggio è stato inviato con successo.";
     } else {
         echo "Spiacente, si è verificato un errore durante l'invio del tuo messaggio.";
