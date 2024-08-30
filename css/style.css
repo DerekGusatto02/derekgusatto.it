@@ -97,8 +97,8 @@ main{
     line-height: 1.5em;
     color:black;
     background-position: center;
-    filter: invert(100%) sepia(100%) saturate(1000%) hue-rotate(180deg);
-  }
+
+  } 
   
 #instagram{
     background-image: url("../img/social-logo/instagram.svg");
@@ -108,6 +108,21 @@ main{
 }
 #linkedin{
     background-image: url("../img/social-logo/linkedin.svg");
+}
+#facebook{
+    background-image: url("../img/social-logo/facebook.svg");
+}
+#spotify{
+    background-image: url("../img/social-logo/spotify.svg");
+}
+#twitter{
+    background-image: url("../img/social-logo/twitter.svg");
+}
+#goodreads{
+    background-image: url("../img/social-logo/goodreads.svg");
+}
+#email{
+    background-image: url("../img/social-logo/email.svg");
 }
 
 #home-logo{
@@ -196,7 +211,7 @@ grid-area: i;
     display: block;
 }
 
-main > h1, main >h2{
+main > h1, main > h2, main > h3{
     margin: 0.5em auto; 
 }
 
@@ -213,16 +228,49 @@ main > h1{
     grid-gap: 0.3em; 
     grid-template-areas: 
         "h h h" 
-        "i c c" ;
+        "i c c" 
+        "e e e"
+        "s s s";
 }
 
 .about-me > h2{
     grid-area: h;
 }
-.about-me > p{
+.about-me > #paragraphs{
     grid-area: c;
 }
 .about-me > img{
     grid-area: i;
     width: 25%;
+}
+.about-me > h3{
+    grid-area: e;
+}
+.about-me > ul{
+    grid-area: s;
+}
+
+a.button-link{
+    display: inline-block;     
+    padding: 0.5em;     
+    margin-left: 0.5em;   
+    color: var(--bgColor);            
+    text-align: center;        
+    text-decoration: none;     
+    border-radius: 5px;       
+    font-weight: bold;        
+    cursor: pointer;          
+}
+
+a.button-link:visited{
+    background-color: var(--secondaryColor);
+}
+
+a.button-link:link{
+    background-color: var(--mainColor);
+}
+
+a.button-link > img{
+    height: 1em;
+    margin-left: 10px;
 }
