@@ -1,7 +1,5 @@
 <?php
-$paginaHTML=file_get_contents("works.html");
-
-
+$paginaHTML=file_get_contents("emailresult.html");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recupero dei dati dal form
     $name = strip_tags(trim($_POST["name"]));
@@ -13,6 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Messaggio di errore se i campi sono vuoti o l'email non è valida
         $result =  "<p>Please fill in all fields and provide a valid email. <br> <a href=\"contacts.php\">Retry to fill the form</a></p>";
+        $paginaHTML=str_replace("{result}",$result,$paginaHTML);
+echo $paginaHTML;
         exit;
     }
 
@@ -30,13 +30,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Invio dell'email
     if (mail($to, $subject, $email_content, $headers) && mail($to_we, $subject, $email_content, $headers)) {
         $result =  "<p>Thanks! You message has been sent. <br> You can return to the <a href=\"index.php\">home page</a></p>";
+        $paginaHTML=str_replace("{result}",$result,$paginaHTML);
+echo $paginaHTML;
         exit;
     } else {
         $result =  "<p>Sorry, an error occurred while sending the message . <br> <a href=\"contacts.php\">Please try again</a></p>";
+        $paginaHTML=str_replace("{result}",$result,$paginaHTML);
+        echo $paginaHTML;
+        exit;
     }
 } else {
     $result =  "<p>Sorry, an error occurred while sending the message . <br> <a href=\"contacts.php\">Please try again</a></p>";
+    $paginaHTML=str_replace("{result}",$result,$paginaHTML);
+echo $paginaHTML;
+    exit;
 }
 
-$paginaHTML=str_replace("{profile}",$result,$paginaHTML);
-echo $paginaHTML;
+
