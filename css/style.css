@@ -356,3 +356,7 @@ input::placeholder, textarea::placeholder {
     width: 90%;
     color: var(--mainColor);
 }
+
+.contacts > p{
+    margin-top: 2em;
+}
