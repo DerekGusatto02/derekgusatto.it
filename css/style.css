@@ -278,3 +278,81 @@ a.button-link > img{
 #paragraphs p:nth-of-type(2) {
     margin-top: 2em;
 }
+
+/* Contacts */
+.contacts{
+    text-align: center;
+}
+form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+fieldset {
+    border: none;  
+    margin: 1em; 
+    margin-top:2em;
+}
+legend {
+    text-align: center; 
+    margin-bottom: 0.5em; 
+    display: block; 
+}
+input:focus, textarea:focus{
+    outline: 3px solid var(--mainColor);
+}
+
+form fieldset{
+    border-radius: 0px 20px 20px 20px;
+    padding:1em;
+    width:70%;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-left: 2em; 
+    width: 90%;
+}
+.form-group input, .form-group textarea {
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #cec8da;
+    color: #09151c;
+    padding:1em;
+    margin-left: 1.5em; 
+    margin-right: 1.5em; 
+    margin-top: 0.5em;
+    margin-bottom:0.5em;
+    border-radius: 5px;
+    /*background-color: var(--headerBgColor);*/
+}
+.form-group textarea {
+    resize: vertical;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #09151c; 
+    opacity: 0.7; 
+}
+
+.form-group input[type="submit"] {
+    width: 20%;
+    background-color: var(--secondaryColor);
+    color: var(--bgColor);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.form-group input[type="submit"]:hover {
+    background-color: var(--mainColor);
+}
+
+.errorSuggestion{
+    margin-left: 2em; 
+    width: 90%;
+    color: var(--mainColor);
+}
