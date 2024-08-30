@@ -274,3 +274,6 @@ a.button-link > img{
     height: 1em;
     margin-left: 10px;
 }
+#paragraphs p:nth-of-type(2) {
+    margin-top: 2em;
+}
