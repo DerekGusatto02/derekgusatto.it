@@ -241,7 +241,8 @@ main > h1{
 }
 .about-me > img{
     grid-area: i;
-    width: 25%;
+    width: 20vw;
+    border-radius: 50%;
 }
 .about-me > h3{
     grid-area: e;

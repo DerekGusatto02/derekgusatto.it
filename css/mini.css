@@ -123,5 +123,6 @@ header #breadcrumb{
 }
 
 .about-me > img{
-    width: 90%;
+    width: 60vw;
+    align-items: center; 
 }
