@@ -340,7 +340,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .form-group input[type="submit"] {
-    width: 20%;
+    width: 15vb;
     background-color: var(--secondaryColor);
     color: var(--bgColor);
     border: none;

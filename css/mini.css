@@ -125,4 +125,10 @@ header #breadcrumb{
 .about-me > img{
     width: 60vw;
     align-items: center; 
+    margin: auto;
+}
+
+.message-form{
+    width: 100%;
+    margin: auto;
 }
