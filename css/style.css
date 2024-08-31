@@ -11,6 +11,8 @@
     --secondaryColor: #ABFBDB;
     --txtColor: #AEA4BF;
     --font-body-family: "Exo", sans-serif;
+    --projectBgColor: #0e1a22;
+    --projectHoverBgColor: #111E27;
 }
 
 html{
@@ -359,4 +361,139 @@ input::placeholder, textarea::placeholder {
 
 .contacts > p{
     margin-top: 2em;
+}
+
+/*Projects*/
+
+.project-nolink{
+    display: block;
+    text-decoration: none;
+    color: var(--txtColor);
+    margin-bottom: 2em;
+}
+
+.project-link{
+    display: block;
+    text-decoration: none;
+    color: var(--txtColor);
+    margin-bottom: 2em;
+}
+
+.project-link:visited{
+    color: var(--secondaryColor);
+}
+
+.project-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
+    grid-gap: 2em;
+    background-color: var(--projectBgColor);
+    padding: 1em;
+    border-radius: 30px;
+    
+    color: var(--txtColor);
+    
+}
+
+.project-nolink > div.project-div:hover{
+    border: 0px solid var(--mainColor);
+    background-color: var(--projectBgColor);
+}
+
+.project-nolink > .project-div:hover h2.project-title{
+    color: var(--txtColor);
+}
+
+.project-div:hover{
+    border: 2px solid var(--mainColor);
+    background-color: var(--projectHoverBgColor);
+    
+}
+
+
+.right-project-div{
+    grid-template-areas: "i i t t t";
+}
+
+.left-project-div{
+    grid-template-areas: "t t t i i";
+}
+
+.project-img{
+    grid-area: i;
+    width: 100%;
+    border-radius: 30px;
+    max-height: 300px;
+    max-width: 700px;
+
+}
+.project-text{
+    grid-area: t;
+
+}   
+
+.project-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.project-div:hover h2.project-title{
+    color: var(--mainColor);
+}
+
+.project-tags{
+    margin: auto;
+    padding: 1em;
+    list-style-type: none;
+    text-align: center;
+    display: block;
+    width: 80%;
+}
+
+.project-tag{
+    display: inline-block;
+    margin: 0 0.5em;
+    padding: 0.1em 0.5em;  
+    border-radius: 10px;  
+    color: var(--bgColor);  
+    border: 2px solid var(--txtColor);
+}
+
+.project-description{
+    overflow-wrap: break-word;
+}
+
+.unipd-tag{
+    background-color:#f9acac;
+    border-color: #f79b9b;
+}
+
+.akite-tag{
+    background-color: #b7ecfa;
+    border-color: #76b5c7;
+}
+
+.completed-tag{
+    background-color: #48EC66;
+    border-color: #39eb5a;
+}
+
+.progress-tag{
+    background-color: #c1eec9;
+    border-color: #a0e6ad;
+}
+
+.award-tag{
+    background-color: #ecf4a6;
+    border-color: #e4ef82;
+}
+
+.einaudi-tag{
+    background-color: #f4d2a6;
+    border-color: #f1b566;
+}
+
+.tradesecret-tag{
+    background-color:#f9acac;
+    border-color: #f79b9b;
 }

@@ -108,6 +108,15 @@ header #breadcrumb{
     font-size: 1.5em;
 }
 
+#social-list {
+    text-align: center; 
+}
+
+#social-list li {
+    width: 20%; 
+    margin: 0.5em 0;
+}
+
 .about-me{
     display: grid;
     grid-template-columns: 1fr; 
@@ -131,4 +140,28 @@ header #breadcrumb{
 .message-form{
     width: 100%;
     margin: auto;
+}
+
+.project-div{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr;  
+    grid-gap: 0.3em;
+    
+}
+
+.right-project-div, .left-project-div{
+    grid-template-areas: 
+        "i"
+        "t";
+}
+
+.project-img{
+    grid-area: i;
+    height: 100%;
+
+}
+
+.project-tag{
+    margin-bottom: 0.5em;
 }
