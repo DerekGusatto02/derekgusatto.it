@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgColor: #FFFFFF;
+    --mainColor: #000000;
+    --secondaryColor: #000000;
+    --txtColor: #000000;
+    --font-body-family: "Times New Roman", serif;
+    --projectBgColor: #FFFFFF;
+    --projectHoverBgColor: #FFFFFF;
+}
+
+html{
+    font-size: 100%;
+    font-family: var(--font-body-family);
+    line-height: 1.5em;
+    margin: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bgColor);
+}
+
+
+
+header{
+    background-color: var(--bgColor);
+    color: var(--mainColor);
+    padding: 1em 1em 0em 1em;
+    border-bottom: 2px solid var(--mainColor); 
+    border-radius: 3px;
+}
+
+.navigationhelp{
+    position: absolute;
+    text-indent: -999em;
+}
+
+header nav #menu{
+    margin-left: 10%;
+    text-align: right;
+    font-size: 1em;
+}
+
+a:link{
+    color: var(--mainColor);
+}
+
+a:visited{
+    color: var(--secondaryColor);
+}
+
+
+#togglemenu{
+    display: none;
+}
+
+#menu ul{
+    display: none;
+}
+
+#breadcrumb {
+    margin: auto;
+    margin-top: 0;
+    margin-left: 0em;
+    text-align: left;
+    padding:0;
+    
+}
+
+main{
+    background-color: var(--bgColor);
+    color: var(--txtColor);
+    margin: auto;
+    width: 80%;
+    max-width: 1200px;
+}
