@@ -145,7 +145,8 @@ header #breadcrumb{
 .project-div{
     display: grid;
     grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr;  
+    grid-template-rows: auto auto;  
+    grid-auto-rows: minmax(0, auto);
     grid-gap: 0.3em;
     
 }
@@ -157,9 +158,13 @@ header #breadcrumb{
 }
 
 .project-img{
-    grid-area: i;
-    height: 100%;
+    width: 100%;
+    height: auto;
 
+}
+
+.project-title{
+    margin-top: 1em;
 }
 
 .project-tag{
