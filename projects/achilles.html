@@ -30,15 +30,41 @@
                 </ul>
             </nav>
             <nav id="breadcrumb" aria-label="Breadcrumb">
-                <p>You are in: Projects &gt; Achilles</p>
+                <p>You are in: <a href="../projects.php">Projects</a> &gt; Achilles</p>
             </nav>
         </header>
         <main id="content" class="project-main">
-            <h2 class="project-title">Achilles</h2>
+            <h2 class="project-title-logo" id="achilles-logo">Achilles</h2>
             <ul class="project-tags">
                 <li class="project-tag einaudi-tag">Einaudi-Scarpa</li>
                 <li class="project-tag completed-tag">Completed</li>
             </ul>
+            <p>This project was presented ad the final exams for the diploma in Computer Science at the IIS Einaudi-Scarpa in th school year 2020/2021. It was completed between May and June 2023, presented at the exams on June 19, with a final grade of 100/100.</p>
+            <p>The project aim was to create a web-based service to manage the data and activities of a library, with the potential to connect with other libraries in the region. The project was inspired by an internship experience and gained insights into library management systems.</p>
+            <img src="../img/projects/other/achilles_1.png" alt="The Achilles website home page, displaying the header menu and some books" class="right-img">
+            <h3>Key Highlights</h3>
+        <ul>
+            <li><strong>Objective:</strong> The creation of a simple and intuitive web interface that allows library staff to manage the catalog, user registrations, and book loans efficiently. Users can view their loan status and modify their profiles.</li>
+            <li><strong>Database Design:</strong> The database stores information about books, users, and loan history. The data model includes entities like <code>User</code>, <code>Book</code>, <code>Library</code>, and relationships such as <code>Loans</code> and <code>Authors</code>. Security measures like user role distinctions and data encryption are implemented.</li>
+            <li><strong>Network Infrastructure:</strong> The network design includes separate VLANs for library staff and users, a secure VPN connection for inter-library communication, and an Access Point for public Wi-Fi. The infrastructure emphasizes security, with measures like ACLs, NAT, and IPsec VPNs.</li>
+            <li><strong>Implementation:</strong> The project includes creating a database, web interface (with functionalities like book search and loan management), and network setup. PHP was used to develop the web application, with features like user authentication, session management, and PDF generation for loan summaries.</li>
+            <li><strong>Challenges and Learning:</strong> I faced challenges with the complexity of the database design and network infrastructure, which required more time than anticipated. Despite this, the project was successfully completed, providing valuable experience in both software development and network configuration.</li>
+        </ul>
+        <img src="../img/projects/other/achilles_2.png" alt="The Achilles' loans page" class="left-img">
+        <h3>Tools Used</h3>
+        <ul>
+            <li><strong>Software Development:</strong> Visual Studio Code, XAMPP (for PHP development)</li>
+            <li><strong>Project Management:</strong> Gantt Project</li>
+            <li><strong>Network Simulation:</strong> Cisco Packet Tracer</li>
+        </ul>
+            <div class="project-resources">
+            <p>
+                To download the documentation: <a href="../docs/projects_docs/ACHILLES.pdf" download target="_blank" class="button-link"> ACHILLES.pdf <img src="../img/download.svg"></a>
+            </p>
+            <p>
+                For the GitHub repository: <a href="https://github.com/DerekGusatto02/ACHILLES" target="_blank" class="button-link"> ACHILLES<img src="../img/social-logo/github_dark.svg"></a>
+            </p>
+        </div>
         </main>
         <footer>
             <p>

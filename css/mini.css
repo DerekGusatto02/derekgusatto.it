@@ -165,3 +165,10 @@ header #breadcrumb{
 .project-tag{
     margin-bottom: 0.5em;
 }
+
+.right-img, .left-img{
+    float: none; 
+    display: block; 
+    margin: 1em auto; 
+    max-width: 80%; 
+}

@@ -101,6 +101,10 @@ main{
     background-position: center;
 
   } 
+
+ul {
+    list-style-position: inside;
+}
   
 #instagram{
     background-image: url("../img/social-logo/instagram.svg");
@@ -259,7 +263,7 @@ main > h1{
 a.button-link{
     display: inline-block;     
     padding: 0.5em;     
-    margin-left: 0.5em;   
+    margin: 0.5em;
     color: var(--bgColor);            
     text-align: center;        
     text-decoration: none;     
@@ -505,4 +509,64 @@ input::placeholder, textarea::placeholder {
 
 main.project-main > h2.project-title{
     font-size: 2em;
+}
+
+.project-title-logo{
+    text-indent: -999em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    line-height: 1.5em;
+    color:black;
+    background-position: center;
+}
+
+#demeter-logo{
+    font-size: 8em;
+    margin-bottom: 0em;
+    margin-top: 0.2em;
+    background-image: url("../img/projects/logos/demeter.svg");
+}
+
+#achilles-logo{
+    font-size: 7em;
+    margin-bottom: 0em;
+    margin-top: 0.3em;
+    background-image: url("../img/projects/logos/achilles.svg");
+}
+
+#apollon-logo{
+    font-size: 5em;
+    margin-bottom: 0em;
+    margin-top: 0.3em;
+    background-image: url("../img/projects/logos/apollon.png");
+}
+
+#asqlepio-logo{
+    font-size: 4em;
+    background-image: url("../img/projects/logos/asqlepio.png");
+}
+
+.right-img {
+    float: right;
+    margin: 0 0 10px 10px;
+    max-width: 40%; /* Modifica la dimensione dell'immagine a seconda delle tue esigenze */
+}
+
+.left-img {
+    float: left;
+    margin: 0 10px 10px 0;
+    max-width: 40%; /* Modifica la dimensione dell'immagine a seconda delle tue esigenze */
+}
+
+.project-resources{
+    clear: both;
+
+}
+
+.fixed-img{
+    float: right; 
+    margin-left: 1em; 
+    margin-bottom: 1em;
+    width: 30%; 
+    height: auto; 
 }

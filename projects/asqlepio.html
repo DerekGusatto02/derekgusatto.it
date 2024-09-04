@@ -30,15 +30,63 @@
                 </ul>
             </nav>
             <nav id="breadcrumb" aria-label="Breadcrumb">
-                <p>You are in: Projects &gt; AsQlepio</p>
+                <p>You are in: <a href="../projects.php">Projects</a> &gt; AsQlepio</p>
             </nav>
         </header>
         <main id="content" class="project-main">
-            <h2 class="project-title">AsQlepio</h2>
-            <ul class="project-tags">
+            <h2 class="project-title-logo" id="asqlepio-logo">AsQlepio</h2>           
+             <ul class="project-tags">
                 <li class="project-tag unipd-tag">UniPD</li>
                 <li class="project-tag completed-tag">Completed</li>
             </ul>
+            <p>
+                AsQlepio is the project developed for the "Object-Oriented Programming" course at the University of Padua during the academic year 2023/24: the project consists in the design and implementation of a software for managing some sensors.            
+            </p>
+            <p>The project was developed with Veronica Tecchiati between December 2023 and February 2024.</p>
+            <p>The project consists in the creation of a hierarchy of classes in C++ representing sensors (chosen by the students) and a GUI, to be created with the Qt framework. In this simulation, the end users of the application must be able to define new sensors, modify and delete existing ones, and start a simulation. The use of appropriate design patterns was recommended. The project required approximately 50 hours of total individual work.</p>
+            <h3>Key Aspects</h3>
+            <ul>
+                <li><strong>Model design:</strong> The system uses an abstract base class Sensor with attributes like identifier, name, reliability, and a measurement range. Various sensor types (e.g., Oxygen Saturation, Heart Rate) extend from this base class.</li>
+                <li><strong>Polymorphism:</strong> Utilized in the sensor hierarchy and implemented through strategy and visitor patterns, allowing flexible sensor data handling and GUI customization.</li>
+                <li><strong>Data persistence:</strong> Data is stored in JSON format, allowing easy saving and loading of sensor data.</li>
+                <li><strong>Implemented features:</strong> The project includes five sensor types, sensor creation and modification, simulation visualization, JSON conversion, and search functionality.</li>
+                <li><strong>Development Enviroment:</strong> Linux (Ubuntu 22.04 LTS) using GCC, Qt, and qmake.</li>
+            </ul>
+            <h3>Project specifications</h3>
+            <p> 
+                The project must necessarily satisfy the following constraints:
+            <ol>
+                <li>be an original work by the student or the pair of students</li>
+                <li>be entirely written in C++</li>
+                <li>provide a graphical interface created in Qt</li>
+                <li>compile without errors on the virtual machine provided (warnings during compilation are tolerated, although generally penalized)</li>
+                <li>implement the principles of encapsulation and information hiding of good object-oriented programming</li>
+                <li>maintain a clear separation between the logical model and the graphical interface</li>
+                <li>execute efficiently and robustly, without runtime errors</li>
+                <li>use polymorphism in a non-trivial way</li>
+                <li>implement a class hierarchy for sensors with at least five concrete classes for projects carried out in pairs</li>
+                <li>allow the creation, search, modification and deletion of sensors, these operations must be usable via the graphical interface</li>
+                <li>implement the persistence of sensor data in a structured format (JSON, XML, etc.) for projects carried out in pairs</li>
+                <li>allow, via the graphical interface, the saving and loading of a sensor file (as described in the previous point) through appropriate dialog windows: the use of paths is not allowed of wired sensor files in the source code</li>
+                <li>allow, via a graphical interface, to start a simulation for a selected sensor, simulating a certain number of data collections; the data must then be displayed in an appropriate manner, for example via QtCharts; the simulation does not need to be interactive</li>
+                <li>be accompanied by a report in pdf format, in Italian or English, of maximum 8 pages with 10pt text.</li>
+            </ol>
+            
+        </p>
+            <h3>Abstract</h3>
+            <p>
+                AsQlepio is an advanced medical sensor data management system, focused on the accurate monitoring of vital parameters such as blood pressure, heart rate, respiratory rate and body temperature. Our project aims to provide a comprehensive and intuitive solution for the collection, analysis and visualization of 
+                critical health data, aiming to improve the efficiency and accuracy of medical information management. Unlike conventional approaches, 
+                AsQlepio stands out for its user-friendly interface and the ability to integrate different types of sensors into a single platform. The main goal is to provide healthcare professionals and patients with a centralized environment for real-time monitoring and historical recording of crucial vital parameters.
+            </p>
+            <div class="project-resources">
+            <p>
+                To download the documentation: <a href="../docs/projects_docs/AsQlepio.pdf" download target="_blank" class="button-link"> AsQlepio.pdf <img src="../img/download.svg"></a>
+            </p>
+            <p>
+                For the GitHub repository: <a href="https://github.com/DerekGusatto02/AsQlepio" target="_blank" class="button-link">AsQlepio<img src="../img/social-logo/github_dark.svg"></a>
+            </p>
+        </div>
         </main>
         <footer>
             <p>
