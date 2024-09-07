@@ -29,7 +29,7 @@ echo $paginaHTML;
 
     // Invio dell'email
     if (mail($to, $subject, $email_content, $headers) && mail($to_we, $subject, $email_content, $headers)) {
-        $result =  "<p>Thanks! You message has been sent. <br> You can return to the <a href=\"index.php\">home page</a></p>";
+        $result =  "<p>Thanks! Your message has been sent. <br> You can return to the <a href=\"index.php\">home page</a></p>";
         $paginaHTML=str_replace("{result}",$result,$paginaHTML);
 echo $paginaHTML;
         exit;
