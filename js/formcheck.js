@@ -37,7 +37,7 @@ function removeChildInput(tag){
 function validateName(input){
     removeChildInput(input);
     //cleaninput.value = cleanInput(input.value);
-    if(input.value.search(/^[a-zA-Z]{2,}$/)!=0){
+    if(input.value.search(/^[a-zA-Z]+(-[a-zA-Z]+)*$/)!=0){
         showError(input, input.value + " is not a valid name!"); 
 
         //input.focus(); 
@@ -74,5 +74,5 @@ function validateMessageForm(){
     inputEmail.value = cleanInput(inputEmail.value);
     let inputMessage = document.getElementById("message");
     inputMessage.value = cleanInput(inputMessage.value);
-    return validateName(inputNome) && validateEmail(inputEmail) && validateMessage(inputMessage);
+    return validateName(inputName) && validateEmail(inputEmail) && validateMessage(inputMessage);
 }
