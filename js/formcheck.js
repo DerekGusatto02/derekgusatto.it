@@ -37,7 +37,7 @@ function removeChildInput(tag){
 function validateName(input){
     removeChildInput(input);
     //cleaninput.value = cleanInput(input.value);
-    if(input.value.search(/^[a-zA-Z]+(-[a-zA-Z]+)*$/)!=0){
+    if(input.value.search(/^[a-zA-Z]+([ '-][a-zA-Z]+)*$/)!=0){
         showError(input, input.value + " is not a valid name!"); 
 
         //input.focus(); 
