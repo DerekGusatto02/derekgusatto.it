@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 :root{
-    --bgColor: #10202a;
+    --bgColor: #081218;
     --mainColor: #FF9933;
     --secondaryColor: #ABFBDB;
     --txtColor: #AEA4BF;
@@ -176,7 +176,7 @@ footer{
 }
 
 #home-container > #splash-image{
-background-image: url("../img/splash.jpg");
+background-image: url("../img/splash_2.jpg");
 background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -188,6 +188,9 @@ grid-area: i;
     bottom: 0; /* Posiziona in basso */
     right: 0;  /* Posiziona a destra */
     margin: 10px; /* Margine opzionale */
+    background-color:rgba(var(--bgColor), 0.7);
+    /*opacity: 0.8;*/
+    color: var(--txtColor);
 }
 
 .home{
