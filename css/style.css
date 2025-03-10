@@ -223,7 +223,7 @@ grid-area: i;
     display: block;
 }
 
-main > h1, main > h2, main > h3{
+main > h1, main > h2, main > h3, main > h4{
     margin: 0.5em auto; 
 }
 
@@ -450,6 +450,10 @@ input::placeholder, textarea::placeholder {
 .project-title{
     text-align: center;
     text-transform: uppercase;
+}
+
+.project-main > .updated-to{
+    text-align: center;
 }
 
 .project-div:hover h2.project-title{

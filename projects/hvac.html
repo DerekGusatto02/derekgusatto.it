@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Stickman Run - Derek Gusatto</title>
+        <meta name="keywords" content="Derek, Gusatto, Software Developer, Programmer, Technology">
+        <meta name="description" content="Hi, I'm Derek Gusatto, I'm a Software Developer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/mini.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="../css/print.css"  media="print">
+        <link rel="icon" type="image/x-icon" href="../img/logo.ico">
+        <script src="../js/scrollToTop.js"></script>
+        <script src="../js/togglemenu.js"></script>
+    </head>
+    <body>
+       <header>
+            
+            <button id="togglemenu" onclick="toggleMenu()">Open menu</button>
+            <nav aria-label="navigation Help" class="navigationhelp">
+                <a href="#content">Go to content</a>
+            </nav>
+            <h1 id="home-logo">Gusatto Derek</h1>
+            <nav id="menu" class="tmenuhidden" aria-label="Main menu">
+                <ul>
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="../aboutme.php">About me</a></li>
+                    <li><a href="../projects.php">Projects</a></li>
+                    <li><a href="../contacts.php">Contacts</a></li>
+                </ul>
+            </nav>
+            <nav id="breadcrumb" aria-label="Breadcrumb">
+                <p>You are in: <a href="../projects.php">Projects</a> &gt; Smart HVAC System</p>
+            </nav>
+        </header>
+        <main id="content" class="project-main">
+            <h2 class="project-title">Smart HVAC System</h2>
+            <ul class="project-tags">
+                <li class="project-tag akite-tag">aKite</li>
+                <li class="project-tag progress-tag">In Progress</li>
+            </ul>
+            <h3 class="updated-to">Updated to <time datetime="2024-11-29">29th November 2024</time> </h3>
+            The Smart HVAC System project is designed to optimize energy costs for indoor spaces like retail stores, with scalability for multiple locations. The system leverages Home Assistant, Amazon Alexa, and Microsoft Azure for automation, control, and cloud integration. Project Haystack has been implemented to standardize data formats and ensure compatibility with future developments.
+     
+            <h4>Technologies Used</h4>
+<ul>
+    <li><b>Home Assistant:</b> Provides centralized control and automation for HVAC devices. Integrated with Amazon Alexa for voice control.</li>
+    <li><b>Yellow Box:</b> Selected for its flexibility and reliability as the hardware backbone for Home Assistant.</li>
+    <li><b>Nabu Casa:</b> Ensures secure remote access to Home Assistant without complex network configurations.</li>
+    <li><b>ESPHome:</b> Facilitates the integration of ESP32 microcontrollers that manage sensors and actuators.</li>
+    <li><b>Microsoft Azure:</b> Used to manage multiple spaces efficiently via Azure IoT Hub.</li>
+    <li><b>Project Haystack:</b> Implements standardized semantic tagging for consistent data interpretation.</li>
+</ul>
+
+<h4>Components</h4>
+<ul>
+    <li><b>Microcontrollers:</b> Raspberry Pi 4 (in Yellow Box) and ESP32 microcontrollers handle communication and device control.</li>
+    <li><b>Sensors:</b> Includes Dallas temperature sensors, MH-Z19 CO2 sensor, HC-SR501 motion sensor, mmWave Radar for presence detection, and an air velocity sensor.</li>
+    <li><b>Actuators:</b> Utilizes PWM fans for efficient cooling and airflow control.</li>
+    <li><b>Wiring and Configuration:</b> Devices are configured through YAML files to manage 1-Wire, UART, and I2C communication.</li>
+</ul>
+
+<h4>Key Features</h4>
+<ul>
+    <li><b>Automations & Helpers:</b> Automations manage error detection, sensor failures, and climate control logic. Helpers track presence detection, temperature changes, and generate virtual sensors for automation algorithms.</li>
+    <li><b>Climate Control Logic:</b> Uses thermostat-based control systems with distinct heating and cooling configurations, avoiding issues experienced with PID controllers and Bang-Bang models.</li>
+    <li><b>Custom Dashboard:</b> Designed to improve user experience by simplifying control visibility and displaying thermostats only when active.</li>
+</ul>
+
+<h4>Problems and Challenges</h4>
+<ol>
+    <li><b>ESPHome & Home Assistant Failures:</b> Unexplained occasional failures in communication between devices.</li>
+    <li><b>Lack of Heartbeat Feature:</b> No native method to send periodic "I'm OK" signals, requiring a custom solution.</li>
+    <li><b>Dallas Sensor Calibration Issues:</b> Significant variation between readings, impacting reliability.</li>
+    <li><b>Air Velocity Sensor Instability:</b> Despite applying a Kalman filter, readings remain inconsistent and unreliable.</li>
+</ol>
+
+<h4>Next Steps & Future Improvements</h4>
+<ul>
+    <li>Develop a robust heartbeat system for device status tracking.</li>
+    <li>Improve Dallas sensor calibration strategies for consistent readings.</li>
+    <li>Further refine air velocity data filtering to reduce erratic measurements.</li>
+    <li>Expand Azure integration to enable automated updates and better synchronization across multiple locations.</li>
+    <li>Implement a solution to set the personalized dashboard as the default interface for improved user accessibility.</li>
+</ul>
+            <div class="project-resources">
+                <p>
+                    To download the simplified documentation: <a href="../docs/projects_docs/HVAC_Overview_EN.pdf" download target="_blank" class="button-link"> SmartHVACSystem.pdf <img src="../img/download.svg"></a>
+                </p>
+                <p>
+                    To download the detailed documentation: <a href="../docs/projects_docs/HVAC_Detailed_EN.pdf" download target="_blank" class="button-link"> SmartHVACSystem.pdf <img src="../img/download.svg"></a>
+
+                </p>
+        </div>
+        </main>
+        <footer>
+            <p>
+                &copy; 2025 Gusatto Derek - All rights reserved
+            </p>
+        </footer>
+    </body>
+</html>
