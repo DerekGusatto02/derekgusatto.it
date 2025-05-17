@@ -6,13 +6,13 @@
     box-sizing: border-box;
 }
 :root{
-    --bgColor: #081218;
+    --bgColor: #000000;
     --mainColor: #FF9933;
     --secondaryColor: #ABFBDB;
     --txtColor: #AEA4BF;
     --font-body-family: "Exo", sans-serif;
-    --projectBgColor: #0e1a22;
-    --projectHoverBgColor: #111E27;
+    --projectBgColor: #000000;
+    --projectHoverBgColor: #191818;
 }
 
 html{
